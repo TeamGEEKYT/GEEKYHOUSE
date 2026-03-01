@@ -8,79 +8,81 @@
 <body>
     <header>
         <h1>GEEKY HOUSE</h1>
-        <p>Livestream Schedules</p>
+        <p data-i18n="page_schedules_header">Livestream Schedules</p>
     </header>
     <!-- INSERT DATES HERE -->
-    <h2>Schedule from 23rd February to 1st March 2026</h2>
-    <p>(everytime you see an hour, it'll be indicated as UTC)</p>
-    <p>(as of right now, no stream is scheduled on Sundays)</p>
-    <p>(please note that stream schedules can change during the week)</p>
+    <h2 data-i18n="page_schedules_title">Schedule from 23rd February to 1st March 2026</h2>
+    <p data-i18n="page_schedules_note1">(everytime you see an hour, it'll be indicated as UTC)</p>
+    <p data-i18n="page_schedules_note2">(as of right now, no stream is scheduled on Sundays)</p>
     <br>
 
     <!-- BUTTONS -->
-    <button onclick="goToURL('#monday')">Monday</button>
-    <button onclick="goToURL('#tuesday')">Tuesday</button>
-    <button onclick="goToURL('#wednesday')">Wednesday</button>
-    <button onclick="goToURL('#thursday')">Thursday</button>
-    <button onclick="goToURL('#friday')">Friday</button>
-    <button onclick="goToURL('#saturday')">Saturday</button>
-    <button onclick="goToURL('#sunday')" class="btn-gray">Sunday</button>
+    <button data-i18n="page_schedules_monday" onclick="goToURL('#monday')">Monday</button>
+    <button data-i18n="page_schedules_tuesday" onclick="goToURL('#tuesday')">Tuesday</button>
+    <button data-i18n="page_schedules_wednesday" onclick="goToURL('#wednesday')">Wednesday</button>
+    <button data-i18n="page_schedules_thursday" onclick="goToURL('#thursday')">Thursday</button>
+    <button data-i18n="page_schedules_friday" onclick="goToURL('#friday')">Friday</button>
+    <button data-i18n="page_schedules_saturday" onclick="goToURL('#saturday')">Saturday</button>
+    <button data-i18n="page_schedules_sunday" onclick="goToURL('#sunday')" class="btn-gray">Sunday</button>
     <p class="inv">a</p>
 
     <!-- DAYS -->
     <div class="container" id="monday">
-        <h3>MONDAY</h3>
+        <h3 data-i18n="page_schedules_monday">MONDAY</h3>
         <p>no stream</p>
     </div>
 
     <br>
 
     <div class="container" id="tuesday">
-        <h3>TUESDAY</h3>
+        <h3 data-i18n="page_schedules_tuesday">TUESDAY</h3>
         <p>no stream</p>
     </div>
 
     <br>
 
     <div class="container" id="wednesday">
-        <h3>WEDNESDAY</h3>
+        <h3 data-i18n="page_schedules_wednesday">WEDNESDAY</h3>
         <p>no stream</p>
     </div>
 
     <br>
 
     <div class="container" id="thursday">
-        <h3>THURSDAY</h3>
+        <h3 data-i18n="page_schedules_thursday">THURSDAY</h3>
         <p>no stream</p>
     </div>
 
     <br>
 
     <div class="container" id="friday">
-        <h3>FRIDAY</h3>
+        <h3 data-i18n="page_schedules_friday">FRIDAY</h3>
         <p>no stream</p>
     </div>
 
     <br>
 
     <div class="container" id="saturday">
-        <h3>SATURDAY</h3>
+        <h3 data-i18n="page_schedules_saturday">SATURDAY</h3>
         <p>no stream</p>
     </div>
 
     <br>
 
     <div class="container" id="sunday">
-        <h3>SUNDAY</h3>
-        <p>no stream on sundays</p>
+        <h3 data-i18n="page_schedules_sunday">SUNDAY</h3>
+        <p data-i18n="page_schedules_sunday_stream">no stream on sundays</p>
     </div>
 
     <footer><br>
-        &copy; Team Geek 2026 - All Rights Reserved
+        <p data-i18n="allrightsreserved">&copy; Team Geek 2026 - All Rights Reserved</p>
     <p class="inv_footer">a</p></footer>
 </body>
 
-
 <script src="script.js"></script>
 
-
+<script src="i18n.js">
+  const savedLang =
+    localStorage.getItem('lang') ?? 'en';
+  i18n.setLang(savedLang);
+</script>

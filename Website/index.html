@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width initial-scale=1.0">
@@ -7,16 +8,26 @@
 <body>
     <header>
         <h1>GEEKY HOUSE</h1>
-        <p>Home</p>
+        <p data-i18n="page_home_header">Home</p>
     </header>
 
     <br>
 
+    <div class="container">
+        <h2 data-i18n="page_home_language_container_title">LANGUAGES</h2>
+        <p data-i18n="page_home_language_container_desc">Select your favorite language among available ones</p>
+        <button onclick="localStorage.setItem('lang', 'en'); i18n.setLang('en')">English</button>
+        <button onclick="localStorage.setItem('lang', 'fr'); i18n.setLang('fr')">Français</button>
+        <button onclick="localStorage.setItem('lang', 'jp'); i18n.setLang('jp')">日本語*</button>
+        <br>
+        <p>* 日本語があまり分からないので、Google翻訳を使って日本語に翻訳しました。すみません。</p>
+    </div>
+
     <!-- About Me Section -->
     <div class="container">
-        <h2>ABOUT ME</h2>
-        <p>I am a small YouTuber and streamer on both YouTube and Twitch.</p>
-        <p>I'm mostly making video-games related content.</p>
+        <h2 data-i18n="page_home_aboutme_container_title">ABOUT ME</h2>
+        <p data-i18n="page_home_aboutme_container_p1">I am a small YouTuber and streamer on both YouTube and Twitch.</p>
+        <p data-i18n="page_home_aboutme_container_p2">I'm mostly making video-games related content.</p>
         <button class="btn-red" onclick="goToURL(ytLink)">YouTube</button>
         <button onclick="goToURL(twitchLink)">Twitch</button>
     <p class="inv">a</p></div>
@@ -25,46 +36,55 @@
 
     <!-- Videogames I play section -->
     <div class="container">
-        <h2>Video-games I play</h2>
-        <p>a lot of video games</p>
+        <h2 data-i18n="page_home_videogames_container_title">Video-games I play</h2>
+        <p data-i18n="page_home_videogames_container_p1">a lot of video games</p>
         <br>
         <h3>Geometry Dash</h3>
-        <p>I play Geometry Dash often and yeah that's pretty much it.</p>
-        <p>My account is <span class="highlight">TeamGeekOff</span>, so feel free to spam-send me messages.</p>
-        <p>(also my current playtime is ~390 hours)</p>
+        <p data-i18n="page_home_videogames_container_p2">I play Geometry Dash often and yeah that's pretty much it.</p>
+        <p data-i18n="page_home_videogames_container_p3">My account is <span class="highlight">TeamGeekOff</span>, so feel free to spam-send me messages.</p>
+        <p data-i18n="page_home_videogames_container_p4">(also my current playtime is ~390 hours)</p>
         <br>
         <h3>Minecraft</h3>
-        <p>idk i feel like mentionning it would help me getting ideas for my website</p>
+        <p data-i18n="page_home_videogames_container_p5">idk i feel like mentionning it would help me getting ideas for my website</p>
         <br>
-        <h3>Some extra games</h3>
-        <p>Roblox (not often these last days tough), Project SEKAI (daily-play lol), R.E.P.O. (last time I opened R.E.P.O.: 2 months ago... probably), Fortnite (i played 5 minutes then uninstalled it), Baldi's Basics + (even tough I'm way less on it), and way too much more</p>
+        <h3 data-i18n="page_home_videogames_container_h">Some extra games</h3>
+        <p data-i18n="page_home_videogames_container_p6">Roblox (not often these last days tough), Project SEKAI (daily-play lol), R.E.P.O. (last time I opened R.E.P.O.: 2 months ago... probably), Fortnite (i played 5 minutes then uninstalled it), Baldi's Basics + (even tough I'm way less on it), and way too much more</p>
     </div>
 
     <br>
 
     <!-- Useless Yet Useful Links -->
     <div class="container">
-        <h1>Some useless, yet useful links</h1>
-        <p>yeah sure</p>
+        <h1 data-i18n="page_home_links_container_title">Some useless, yet useful links</h1>
+        <p data-i18n="page_home_links_container_desc">yeah sure</p>
         <br>
-        <button onclick="goToURL('#livestreamlinks')">Livestream Links</button>
-        <button onclick="goToURL('announcements.html')">Announcements</button>
-        <button onclick="goToURL('articles/index.html')">Random, yet articles</button>
+        <button data-i18n="page_home_links_container_live" onclick="goToURL('#livestreamlinks')">Livestream Links</button>
+        <button data-i18n="page_home_links_container_announcements" onclick="goToURL('announcements.html')">Announcements</button>
+        <button data-i18n="page_home_links_container_articles" onclick="goToURL('articles/index.html')">Random, yet articles</button>
     <p class="inv">a</p></div>
 
     <br>
 
     <!-- Useless Yet Stream Links -->
     <div class="container" id="livestreamlinks">
-        <h1>Some useless, yet Stream links</h1>
-        <p>That text is missing! Please report it at Team Geek.</p>
+        <h1 data-i18n="page_home_streamlinks_container_title">Some useless, yet Stream links</h1>
+        <p data-i18n="page_home_streamlinks_container_desc">That text is missing! Please report it to Team Geek's Brain, as it just broke.</p>
         <br>
-        <button onclick="goToURL('schedules.html')">Schedules</button>
-        <button onclick="goToURL('rules.html')">Rules</button>
+        <button data-i18n="page_home_streamlinks_container_schedule" onclick="goToURL('schedules.html')">Schedules</button>
+        <button data-i18n="page_home_streamlinks_container_rules" onclick="goToURL('rules.html')">Rules</button>
     <p class="inv">a</p></div>
 
     <footer><br>
-        &copy; Team Geek 2026 - All Rights Reserved
+        <p data-i18n="allrightsreserved">&copy; Team Geek 2026 - All Rights Reserved</p>
     <p class="inv_footer">a</p></footer>
 </body>
+
 <script src="script.js"></script>
+
+<script src="i18n.js">
+  const savedLang =
+    localStorage.getItem('lang') ?? 'en';
+  i18n.setLang(savedLang);
+</script>
+
+<!--zxxz-hw02-838y-0eus-bjcc-->

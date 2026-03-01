@@ -7,24 +7,41 @@
 <body>
     <header>
         <h1>GEEKY HOUSE</h1>
-        <p>Announcements</p>
+        <p data-i18n="page_announcements_header">Announcements</p>
     </header>
 
     <br>
     
+    <div class="container">
+        <h1 data-i18n="page_announcements_languages_title">LANGUAGES SUPPORT!!!</h1>
+        <p data-i18n="page_announcements_languages_p1">Geeky House now supports multiple languages!</p>
+        <p data-i18n="page_announcements_languages_p2">This includes French, English and Japanese.</p>
+        <p data-i18n="page_announcements_languages_p3">(Since I don't know how to speak Japanese, I'm using AI to translate to it. Don't blame me)</p>
+        <br>
+        <p class="smalltext" data-i18n="page_announcements_languages_footer">Made 1st March 2026 at 2:15AM (UTC)</p>
+    </div>
+
+    <br>
+
     <!-- New Website -->
     <div class="container">
-        <h1>NEW WEBSITE!!!</h1>
-        <p>Yaaaaaaaaaaaaaaaaaaaaaaaay!</p>
-        <p>Made in three hours because I don't have a life rn</p>
-        <p>yet i'm having fun with my viewers</p>
+        <h1 data-i18n="page_announcements_newwebsite_title">NEW WEBSITE!!!</h1>
+        <p data-i18n="page_announcements_newwebsite_p1">Yaaaaaaaaaaaaaaaaaaaaaaaay!</p>
+        <p data-i18n="page_announcements_newwebsite_p2">Made in three hours because I don't have a life rn</p>
+        <p data-i18n="page_announcements_newwebsite_p3">yet i'm having fun with my viewers</p>
         <br>
-        <p class="smalltext">Made 20th February 2026 at 9:53PM (UTC+1)</p>
+        <p class="smalltext" data-i18n="page_announcements_newwebsite_footer">Made 20th February 2026 at 8:53PM (UTC)</p>
     </div>
 
     <br>
 
     <footer><br>
-        &copy; Team Geek 2026 - All Rights Reserved
+        <p data-i18n="allrightsreserved">&copy; Team Geek 2026 - All Rights Reserved</p>
     <p class="inv_footer">a</p></footer>
 </body>
+
+<script src="i18n.js">
+  const savedLang =
+    localStorage.getItem('lang') ?? 'en';
+  i18n.setLang(savedLang);
+</script>
