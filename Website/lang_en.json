@@ -1,7 +1,7 @@
 {
     "page_home_header": "Home",
     "page_home_language_container_title": "LANGUAGES",
-    "page_home_language_container_desc": "Select your favorite language among available ones",
+    "page_home_language_container_desc": "Select your favorite language among available ones (bugged, fixed soon)",
     "page_home_aboutme_container_title": "ABOUT ME",
     "page_home_aboutme_container_p1": "I am a small YouTuber and streamer on both YouTube and Twitch.",
     "page_home_aboutme_container_p2": "I'm mostly making video-games related content.",
@@ -49,4 +49,5 @@
     "page_announcements_newwebsite_footer": "Made 20th February 2026 at 8:53PM (UTC)",
 
     "allrightsreserved": "&copy; Team Geek 2026 - All Rights Reserved"
+
 }
