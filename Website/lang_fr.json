@@ -2,6 +2,7 @@
     "page_home_header": "Accueil",
     "page_home_language_container_title": "LANGUES",
     "page_home_language_container_desc": "Sélectionnez votre langue préférée parmis celles disponibles",
+    "page_home_language_container_note": "Si vous voyez du texte bizarre, essayez de vider le cache de votre navigateur.",
     "page_home_aboutme_container_title": "A PROPOS DE MOI",
     "page_home_aboutme_container_p1": "Je suis un petit YouTuber sur YouTube et Twitch.",
     "page_home_aboutme_container_p2": "Je fais majoritairement du contenu basé sur les jeux-vidéo.",
@@ -51,4 +52,5 @@
     "allrightsreserved": "&copy; Team Geek 2026 - Tous droits réservés"
 
 }
+
 
