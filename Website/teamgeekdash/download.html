@@ -1,0 +1,52 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>TeamGeekDash: A new GDPS by Team Geek</title>
+    <link rel="stylesheet" href="/geekyhouse/Website/style.css">
+    <style>
+        body {
+            background: linear-gradient(#050, #070);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="/geekyhouse/assets/teamgeekdash_logo.png" height="auto", width="600">
+        <h2 data-i18n="page_tgd_header">The 3rd GDPS by Team Geek</h2>
+    </header>
+
+    <div class="container">
+        <h2 data-i18n="page_tgddownload_header">PLAY</h2>
+        <p data-i18n="page_tgddownload_text1">In a legal Geometry Dash copy, download "Geode" and the mod "GDPS Switcher" by km7dev and Alphii.</p>
+        <p data-i18n="page_tgddownload_text2">Once it is downloaded, press on the new button in the Geometry Dash menu and press the New button in the bottom-right corner.</p>
+        <p>Server Name: (Put anything) - Save Name (Optional): (Put anything) - Server URL: https://tgyggdps.ps.fhgdps.com</p>
+        <button id="copytoclipboard" onclick="copyToClipboard()" data-i18n="page_tgddownload_button">Copy to clipboard URL</button>
+        <p data-i18n="page_tgddownload_text3">Click "Save", press "Use" and restart the game.</p>
+        <p class="inv_footer">a</p>
+    </div>
+
+    <footer><br>
+        <p>&copy; Team Geek 2026 - All Rights Reserved</p>
+        <p>&copy; Geometry Dash is made by RobtopGames</p>
+    <p class="inv_footer">a</p></footer>
+
+    <script src="/geekyhouse/Website/script.js"></script>
+    <script src="/geekyhouse/Website/i18n.js"></script>
+
+    <script>
+      (async () => {
+        const savedLang = localStorage.getItem('lang') ?? 'en';
+        await i18n.setLang(savedLang);
+      })();
+
+      async function copyToClipboard() {
+            try {
+                await navigator.clipboard.writeText('https://tgyggdps.ps.fhgdps.com');
+                document.getElementById("copytoclipboard").innerText = "Success!";
+            } catch (err) {
+                document.getElementById("copytoclipboard").innerText = "Error while trying to copy: "+err;
+            }
+        }
+    </script>
+</body>

@@ -49,6 +49,27 @@
     "page_announcements_newwebsite_p3": "cependant je m'amuse avec mes viewers",
     "page_announcements_newwebsite_footer": "Fait le 20 Février 2026 à 21h53 (UTC+1)",
 
+    "page_tgd_header": "Le 3e GDPS par Team Geek",
+
+    "page_tgdindex_etr1": "Encore un autre GDPS Easy-to-rate",
+    "page_tgdindex_etr2": "Probablement le 8 735ème GDPS à faire ça, mais peu importe.",
+    "page_tgdindex_etr3": "Un GDPS pour tous",
+    "page_tgdindex_etr4": "Ce GDPS autorise les meilleurs joueurs, mauvais créateurs, et des joueurs aléatoires... En fait, chaque joueur est la bienvenue.",
+    "page_tgdindex_etr5": "Mobile et PC",
+    "page_tgdindex_etr6": "Ce GDPS est disponible sur mobile et PC.",
+    
+    "page_tgdindex_download1": "Jouez maintenant!",
+    "page_tgdindex_download2": "Jouez au GDPS dès aujourd'hui!",
+    "page_tgdindex_downloadbtn": "Jouer",
+
+    "page_tgddemonlist_soon": "La Demonlist arrivera quand des niveaux seront publiés sur le GDPS",
+
+    "page_tgddownload_header": "JOUER",
+    "page_tgddownload_text1": "Dans une copie légale de Geometry Dash, installez \"Geode\" et le mod \"GDPS Switcher\" par km7dev et Alphii.",
+    "page_tgddownload_text2": "Une fois installé, appuyez sur le nouveau bouton dans le menu principal de Geometry Dash et appuyez sur New en bas à droite.",
+    "page_tgddownload_text3": "Cliquez sur \"Save\", appuyez sur \"Use\" et redémarrez le jeu.",
+    "page_tgddownload_button": "Copier URL dans le presse-papier",
+
     "allrightsreserved": "&copy; Team Geek 2026 - Tous droits réservés"
 
 }

@@ -1,0 +1,55 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>TeamGeekDash: A new GDPS by Team Geek</title>
+    <link rel="stylesheet" href="/geekyhouse/Website/style.css">
+    <style>
+        body {
+            background: linear-gradient(#050, #070);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="/geekyhouse/assets/teamgeekdash_logo.png" height="auto", width="600">
+        <h2 data-i18n="page_tgd_header">The 3rd GDPS by Team Geek</h2>
+    </header>
+
+    <div class="container">
+        <h2 data-i18n="page_tgdindex_etr1">Yet another Easy-to-rate GDPS</h2>
+        <p data-i18n="page_tgdindex_etr2">This is probably the 8 735th GDPS to do that, but whatever.</p>
+        <br>
+        <h2 data-i18n="page_tgdindex_etr3">A GDPS for everyone</h2>
+        <p data-i18n="page_tgdindex_etr4">This GDPS allows Top players, bad creators, and some random players... Actually, every players are welcome.</p>
+        <br>
+        <h2 data-i18n="page_tgdindex_etr5">Mobile and PC</h2>
+        <p data-i18n="page_tgdindex_etr6">This GDPS is available for both mobile and PC.</p>
+    </div>
+
+    <br>
+
+    <div class="container">
+        <h2 data-i18n="page_tgdindex_download1">Play Now</h2>
+        <p data-i18n="page_tgdindex_download2">Play the GDPS now!</p>
+        <button onclick="goToURL('download.html')" data-i18n="page_tgdindex_downloadbtn">Download</button>
+        <p class="inv_footer">a</p>
+    </div>
+
+    <br>
+
+    <footer><br>
+        <p>&copy; Team Geek 2026 - All Rights Reserved</p>
+        <p>&copy; Geometry Dash is made by RobtopGames</p>
+    <p class="inv_footer">a</p></footer>
+
+    <script src="/geekyhouse/Website/script.js"></script>
+    <script src="/geekyhouse/Website/i18n.js"></script>
+
+    <script>
+      (async () => {
+        const savedLang = localStorage.getItem('lang') ?? 'en';
+        await i18n.setLang(savedLang);
+      })();
+    </script>
+</body>

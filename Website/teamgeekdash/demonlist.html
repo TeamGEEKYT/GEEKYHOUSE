@@ -1,0 +1,79 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>TeamGeekDash: A new GDPS by Team Geek</title>
+    <link rel="stylesheet" href="/geekyhouse/Website/style.css">
+    <style>
+        body {
+            background: linear-gradient(#050, #070);
+        }
+        .top1 {
+            background: linear-gradient(#800, #a00);
+            stroke: #600;
+            stroke-width: 3px;
+        }
+        .top2 {
+            background: linear-gradient(rgb(136, 43, 0), rgb(168, 43, 0));
+            stroke: rgb(104, 43, 0);
+            stroke-width: 3px;
+        }
+        .top3 {
+            background: linear-gradient(#bb0, #cc0);
+            stroke: #990;
+            stroke-width: 3px;
+        }
+        .other {
+            background: linear-gradient(#888, #aaa);
+            stroke: #666;
+            stroke-width: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="/geekyhouse/assets/teamgeekdash_logo.png" height="auto", width="600">
+        <h2 data-i18n="page_tgd_header">The 3rd GDPS by Team Geek</h2>
+    </header>
+
+    <p data-i18n="page_tgddemonlist_soon">Demonlist comes when levels are actually published on the GDPS</p>
+
+    <div class="top1">
+        <h2>TOP 1</h2>
+        <p>Test by Test</p>
+        <img src="/geekyhouse/assets/example.jpg" width="600", height="auto">
+    <p class="inv_footer">a</p></div>
+
+    <div class="top2">
+        <h2>TOP 2</h2>
+        <p>Test by Test</p>
+        <img src="/geekyhouse/assets/example.jpg" width="600", height="auto">
+    <p class="inv_footer">a</p></div>
+
+    <div class="top3">
+        <h2>TOP 3</h2>
+        <p>Test by Test</p>
+        <img src="/geekyhouse/assets/example.jpg" width="600", height="auto">
+    <p class="inv_footer">a</p></div>
+
+    <div class="other">
+        <h2>TOP 4</h2>
+        <p>Test by Test</p>
+        <img src="/geekyhouse/assets/example.jpg" width="600", height="auto">
+    <p class="inv_footer">a</p></div>
+<p class="inv_footer">a</p>
+    <footer><br>
+        <p>&copy; Team Geek 2026 - All Rights Reserved</p>
+        <p>&copy; Geometry Dash is made by RobtopGames</p>
+    <p class="inv_footer">a</p></footer>
+
+    <script src="/geekyhouse/Website/script.js"></script>
+    <script src="/geekyhouse/Website/i18n.js"></script>
+
+    <script>
+      (async () => {
+        const savedLang = localStorage.getItem('lang') ?? 'en';
+        await i18n.setLang(savedLang);
+      })();
+    </script>
+</body>
